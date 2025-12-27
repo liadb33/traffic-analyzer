@@ -1,28 +1,67 @@
-# Traffic Analyzer
+# 🛡️ Traffic Analyzer
 
 **Lightweight Network Intrusion Detection for Industrial Control Systems**
+
+<div align="center">
+
+![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+![libpcap](https://img.shields.io/badge/libpcap-0078D4?style=for-the-badge&logo=wireshark&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![JSON](https://img.shields.io/badge/JSON-000000?style=for-the-badge&logo=json&logoColor=white)
+![Network Security](https://img.shields.io/badge/Network_Security-FF6B6B?style=for-the-badge&logo=security&logoColor=white)
+
+</div>
 
 A high-performance, passive network analyzer designed for OT/ICS environments. Traffic Analyzer performs real-time asset discovery, behavioral baselining, and anomaly detection by analyzing network traffic captures, providing visibility into industrial networks without active scanning or network disruption.
 
 ---
 
-## Key Features
+## 📊 Output Example
 
-- **Passive Asset Discovery**: Automatically identifies all network devices (IP, MAC) from traffic analysis
-- **Role Identification**: Distinguishes between servers and clients based on port activity patterns
-- **OT Protocol Recognition**: Native support for industrial protocols (Modbus, S7-Comm, EtherNet/IP)
-- **Behavioral Baselining**: Learns normal network behavior during a configurable baseline period
-- **Multi-Vector Anomaly Detection:**
+```json
+{
+  "anomaly_summary": {
+    "total_anomalies": 847,
+    "by_type": {
+      "new_peer": 42,
+      "new_port": 803,
+      "traffic_spike": 1,
+      "port_scan_detected": 1
+    },
+    "scanners_detected": [
+      {
+        "ip": "192.168.1.100",
+        "unique_ports_scanned": 512,
+        "port_range": "1-1024",
+        "severity": "high"
+      }
+    ]
+  },
+  "assets": [...],
+  "communications": [...],
+  "anomalies": [...]
+}
+```
+
+---
+
+## ✨ Key Features
+
+- 🔍 **Passive Asset Discovery**: Automatically identifies all network devices (IP, MAC) from traffic analysis
+- 🎯 **Role Identification**: Distinguishes between servers and clients based on port activity patterns
+- 🏭 **OT Protocol Recognition**: Native support for industrial protocols (Modbus, S7-Comm, EtherNet/IP)
+- 📈 **Behavioral Baselining**: Learns normal network behavior during a configurable baseline period
+- 🚨 **Multi-Vector Anomaly Detection:**
   - New peer connections (lateral movement detection)
   - Unauthorized port access (policy violations)
   - Traffic volume spikes (potential data exfiltration or DoS)
   - Port scanning behavior (reconnaissance detection)
-- **Structured JSON Output**: Machine-readable results for SIEM integration
-- **Zero Network Impact**: Operates entirely on captured traffic (PCAP files)
+- 📋 **Structured JSON Output**: Machine-readable results for SIEM integration
+- ✅ **Zero Network Impact**: Operates entirely on captured traffic (PCAP files)
 
 ---
 
-## Tech Stack
+## 🔧 Tech Stack
 
 | Component | Technology |
 |-----------|------------|
@@ -34,7 +73,7 @@ A high-performance, passive network analyzer designed for OT/ICS environments. T
 
 ---
 
-## Architecture Overview
+## 🏗️ Architecture Overview
 
 Traffic Analyzer employs a two-phase detection architecture that first learns legitimate network behavior, then identifies deviations from the established baseline.
 
@@ -92,7 +131,7 @@ flowchart TB
 
 ---
 
-## Getting Started
+## 🚀 Getting Started
 
 ### Prerequisites
 
@@ -127,7 +166,7 @@ g++ -o analyzer main.cpp packet_processor.cpp helpers.cpp -lpcap -std=c++17 -O2
 
 ---
 
-## Usage
+## 💻 Usage
 
 ### Basic Asset Discovery
 
@@ -157,36 +196,11 @@ This command:
 | `--input <file>` | Path to PCAP file for analysis | `4SICS-GeekLounge-151020.pcap` |
 | `--baseline-minutes <N>` | Duration of baseline learning phase | `0` (disabled) |
 
-### Output Example
 
-```json
-{
-  "anomaly_summary": {
-    "total_anomalies": 847,
-    "by_type": {
-      "new_peer": 42,
-      "new_port": 803,
-      "traffic_spike": 1,
-      "port_scan_detected": 1
-    },
-    "scanners_detected": [
-      {
-        "ip": "192.168.1.100",
-        "unique_ports_scanned": 512,
-        "port_range": "1-1024",
-        "severity": "high"
-      }
-    ]
-  },
-  "assets": [...],
-  "communications": [...],
-  "anomalies": [...]
-}
-```
 
 ---
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 traffic-analyzer/
@@ -214,7 +228,7 @@ traffic-analyzer/
 
 ---
 
-## Security & Performance Considerations
+## 🔒 Security & Performance Considerations
 
 ### Security Design
 

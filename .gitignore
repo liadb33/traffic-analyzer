@@ -1,0 +1,11 @@
+# Claude folder
+claude/
+
+# JSON files
+*.json
+
+# PCAP files
+*.pcap
+
+# .vscode folder
+.vscode/

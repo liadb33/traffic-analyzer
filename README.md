@@ -2,23 +2,23 @@
 
 **Lightweight Network Intrusion Detection for Industrial Control Systems**
 
-A high-performance, passive network analyzer designed for OT/ICS environments. Traffic Analyzer performs real-time asset discovery, behavioral baselining, and anomaly detection by analyzing network traffic captures—providing visibility into industrial networks without active scanning or network disruption.
+A high-performance, passive network analyzer designed for OT/ICS environments. Traffic Analyzer performs real-time asset discovery, behavioral baselining, and anomaly detection by analyzing network traffic captures, providing visibility into industrial networks without active scanning or network disruption.
 
 ---
 
 ## Key Features
 
-- **Passive Asset Discovery** — Automatically identifies all network devices (IP, MAC) from traffic analysis
-- **Role Identification** — Distinguishes between servers and clients based on port activity patterns
-- **OT Protocol Recognition** — Native support for industrial protocols (Modbus, S7-Comm, EtherNet/IP)
-- **Behavioral Baselining** — Learns normal network behavior during a configurable baseline period
+- **Passive Asset Discovery**: Automatically identifies all network devices (IP, MAC) from traffic analysis
+- **Role Identification**: Distinguishes between servers and clients based on port activity patterns
+- **OT Protocol Recognition**: Native support for industrial protocols (Modbus, S7-Comm, EtherNet/IP)
+- **Behavioral Baselining**: Learns normal network behavior during a configurable baseline period
 - **Multi-Vector Anomaly Detection:**
   - New peer connections (lateral movement detection)
   - Unauthorized port access (policy violations)
   - Traffic volume spikes (potential data exfiltration or DoS)
   - Port scanning behavior (reconnaissance detection)
-- **Structured JSON Output** — Machine-readable results for SIEM integration
-- **Zero Network Impact** — Operates entirely on captured traffic (PCAP files)
+- **Structured JSON Output**: Machine-readable results for SIEM integration
+- **Zero Network Impact**: Operates entirely on captured traffic (PCAP files)
 
 ---
 
@@ -200,7 +200,6 @@ traffic-analyzer/
 ├── analysis_results.json    # Output file (generated)
 ├── .vscode/                 # VS Code configuration
 │   └── c_cpp_properties.json
-├── CLAUDE.md                # AI assistant guidance
 └── README.md                # This file
 ```
 
@@ -241,18 +240,7 @@ traffic-analyzer/
 
 ---
 
-## Contributing
-
-Contributions are welcome! Please feel free to submit issues and pull requests.
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
----
 
 <p align="center">
-  <i>Built for securing critical infrastructure</i>
+  <i>Thank You! </i>
 </p>

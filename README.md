@@ -241,19 +241,6 @@ traffic-analyzer/
 
 ---
 
-## Future Roadmap
-
-- [ ] **Live Capture Mode**: Real-time analysis of network interfaces
-- [ ] **Deep Packet Inspection**: Extended OT protocol parsing (DNP3, IEC 61850)
-- [ ] **Machine Learning Integration**: Adaptive baseline using statistical models
-- [ ] **Alert Enrichment**: CVE correlation and threat intelligence feeds
-- [ ] **Dashboard UI**: Web-based visualization of network topology and alerts
-- [ ] **SIEM Integration**: Native connectors for Splunk, Elastic, and QRadar
-- [ ] **Multi-File Analysis**: Correlate findings across multiple PCAP captures
-- [ ] **Configuration File**: YAML-based threshold and protocol customization
-
----
-
 ## Contributing
 
 Contributions are welcome! Please feel free to submit issues and pull requests.
@@ -263,22 +250,6 @@ Contributions are welcome! Please feel free to submit issues and pull requests.
 3. Commit your changes (`git commit -m 'Add amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
-
----
-
-## Contact
-
-**Developer**: [Your Name]
-
-- **GitHub**: [github.com/yourusername](https://github.com/yourusername)
-- **LinkedIn**: [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)
-- **Email**: your.email@example.com
-
----
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 

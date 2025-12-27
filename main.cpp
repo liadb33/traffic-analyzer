@@ -30,7 +30,7 @@ int main(int argc, char* argv[]) {
     ctx.baseline_limit_seconds = baseline_mins * 60; // Convert to seconds
     ctx.anomaly_detection_enabled = (baseline_mins > 0); // Only enable anomaly detection if baseline specified
 
-    std::cout << "Starting Mini-iSID Analysis (" << baseline_mins << "m Baseline)" << std::endl;
+    std::cout << "Starting Analysis (" << baseline_mins << "m Baseline)" << std::endl;
     std::cout << "Analyzing PCAP for Assets and Roles (Professional Mode)..." << std::endl;
 
     pcap_loop(handle, 0, packet_handler, reinterpret_cast<u_char*>(&ctx));

@@ -1,8 +1,8 @@
-# Mini-iSID
+# Traffic Analyzer
 
 **Lightweight Network Intrusion Detection for Industrial Control Systems**
 
-A high-performance, passive network analyzer designed for OT/ICS environments. Mini-iSID performs real-time asset discovery, behavioral baselining, and anomaly detection by analyzing network traffic captures—providing visibility into industrial networks without active scanning or network disruption.
+A high-performance, passive network analyzer designed for OT/ICS environments. Traffic Analyzer performs real-time asset discovery, behavioral baselining, and anomaly detection by analyzing network traffic captures—providing visibility into industrial networks without active scanning or network disruption.
 
 ---
 
@@ -36,7 +36,7 @@ A high-performance, passive network analyzer designed for OT/ICS environments. M
 
 ## Architecture Overview
 
-Mini-iSID employs a two-phase detection architecture that first learns legitimate network behavior, then identifies deviations from the established baseline.
+Traffic Analyzer employs a two-phase detection architecture that first learns legitimate network behavior, then identifies deviations from the established baseline.
 
 ```mermaid
 flowchart TB
@@ -104,8 +104,8 @@ flowchart TB
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/mini-isid.git
-cd mini-isid
+git clone https://github.com/yourusername/traffic-analyzer.git
+cd traffic-analyzer
 
 # Install dependencies (Ubuntu/Debian)
 sudo apt-get update
@@ -189,7 +189,7 @@ This command:
 ## Project Structure
 
 ```
-mini-isid/
+traffic-analyzer/
 ├── main.cpp                 # Entry point, CLI parsing, orchestration
 ├── packet_processor.cpp     # Core packet handling and anomaly detection logic
 ├── packet_processor.h       # Packet handler interface
